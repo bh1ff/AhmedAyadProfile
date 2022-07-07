@@ -10,6 +10,18 @@
     that don't come from third party libraries. This file gets compiled using
     Gulp and send to the /css folder which is then loaded on the page.
 */
+a.contact-button:hover {
+    color: white;
+    background: #00b7c7;
+    border-radius: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+a.contact-button {
+    color: #00B7C7;
+    text-decoration: none;
+}
 .contact-button{
 }
 #contact-container{
