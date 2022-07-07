@@ -1,2 +1,285 @@
-<doctype html>
-Hello World
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ahmed Ayad</title>
+	<link rel="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADa3PQAhH/LAPT1/wD09/wARDDLAEs5sACdk/QARi/RAEYxzgBGLtcAp6LQAJKF1ABLOsUATEK5AM7Q/gChoO4AvbznAJCM1wCtqs0AUT3FAE870QDv7v0AqKjrAJmbzgDFxPYAx8XwAIZ/1QBHNLQASDaxAHNmygBDLcwARTDMAMrJ/ABILs8ARDTPAEk2wwBHM8wARy/SAKOd3QBIL9IAUT+oAE47twBNNsMAUDq9AOfz+wDx8PsAQS+vAN3T/wDz9P4Aw739AEQwsgBUTsMAhn3QAD4r0ACFfN8AQTDNALKx7ACIeOUAWE3SAEUwzQBHPLsASTTHAEcx0ABKPrgASjbEAEw7uABJOcQA5uv/AEwy0wC7uO8AUDXKAFJCsgCYhtkAa2e0AK6zzwDw8f8A3N3xAICBywDd2P0ArqL/APr5/ABGMsIARDLLAEUu0QBLNbkARjLLAP76/wBGMM4ASjLCAHFw2ACjm+sATEG5AFBAtgBXUY8A1s/+AKmp3wDr9foAVU2wAFREwgBBJsMARDufAPT2/QDf1/sAQTTAAEQvwwBIOLEARC3PAF9XswBLQKUAzcD/AEcuyQBDMM8ARjPGAEQyzABGMM8ARzLMAEUv1QBJM8YARjfSAGNavACpqtEAwL/iAOzq/gCBdr4A7e3+AFI7zACmnv4AWlafANng8wCdlM8ASCuvAImCvgD19v4AVEjPAF1PtwCGftYAa2PgAEc2vgBEMs0ARi/NAEo7sgBFLtMARDHTAEYw0ABHMs0ASC7TAOXo+QBIMNAAh4viAE07xABTPbgA1tX3AO3t/wDu7f8A2tr9AIR/2gCyteEA9/n/AHh0qACKgtEAYk27ANHQ4ABGLdEARjHLAEcvzgBLM78ASTPIAEsyxQBNMsUARznIAE86uQBKN8sATj+/ANTQ+wCspd8APCvDAHx05wCJd8wAycnnAEg9qACgnNcARivMAEUuzABEL88ARTHMALCv/QBGMcwAdnDBAEcvzwDl4/4AYFLLAOnr+wBSQLEA7un+AFZDsQA/LqkAwLv0AFdDugBCKLsA3t32AEYsvgBvZ8sAQDHNAEQuzQDQzeIAopXeAEUwygBBNM0ARjTEAEUzygBFMc0ASDDKAEgyxwBGMc0ASDPKAEg7xwBOLdMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFcICFIHV9HVuggHB1UEiggIjQiiEMhEhLwILl6my3I7i8IdPJY/tJp5c5+DIJE7H7xGtXZImbGuTBVwr1rVBwiJW7AvbFGgI4hlGFxKkis3kLKjlE4wHH5iu2BhzE+OOMRYFoKBR75uPskzZDq/e7eMAMU1MsEBC8rHRYZnX6Q9qkG9f0lLAwItzZciq3XVQGMXGTGzwyh8Vg4KqTbVCCFDmKyo03dN2A0pQqeHCAh0lRsFLHhouVkCVAZ9bwgIVw9TXZutgJ0mems0hNAICCXSuBNphVCcEqEq12aeCAjWznEawDkeJwmlbcYUEbYIJNUI1VdqjwgIzwyT1FcIVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" href="favicon.ico" type="image/x-icon">
+	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEACABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAADa3PQAhH/LAPT1/wD09/wARDDLAEs5sACdk/QARi/RAEYxzgBGLtcAp6LQAJKF1ABLOsUATEK5AM7Q/gChoO4AvbznAJCM1wCtqs0AUT3FAE870QDv7v0AqKjrAJmbzgDFxPYAx8XwAIZ/1QBHNLQASDaxAHNmygBDLcwARTDMAMrJ/ABILs8ARDTPAEk2wwBHM8wARy/SAKOd3QBIL9IAUT+oAE47twBNNsMAUDq9AOfz+wDx8PsAQS+vAN3T/wDz9P4Aw739AEQwsgBUTsMAhn3QAD4r0ACFfN8AQTDNALKx7ACIeOUAWE3SAEUwzQBHPLsASTTHAEcx0ABKPrgASjbEAEw7uABJOcQA5uv/AEwy0wC7uO8AUDXKAFJCsgCYhtkAa2e0AK6zzwDw8f8A3N3xAICBywDd2P0ArqL/APr5/ABGMsIARDLLAEUu0QBLNbkARjLLAP76/wBGMM4ASjLCAHFw2ACjm+sATEG5AFBAtgBXUY8A1s/+AKmp3wDr9foAVU2wAFREwgBBJsMARDufAPT2/QDf1/sAQTTAAEQvwwBIOLEARC3PAF9XswBLQKUAzcD/AEcuyQBDMM8ARjPGAEQyzABGMM8ARzLMAEUv1QBJM8YARjfSAGNavACpqtEAwL/iAOzq/gCBdr4A7e3+AFI7zACmnv4AWlafANng8wCdlM8ASCuvAImCvgD19v4AVEjPAF1PtwCGftYAa2PgAEc2vgBEMs0ARi/NAEo7sgBFLtMARDHTAEYw0ABHMs0ASC7TAOXo+QBIMNAAh4viAE07xABTPbgA1tX3AO3t/wDu7f8A2tr9AIR/2gCyteEA9/n/AHh0qACKgtEAYk27ANHQ4ABGLdEARjHLAEcvzgBLM78ASTPIAEsyxQBNMsUARznIAE86uQBKN8sATj+/ANTQ+wCspd8APCvDAHx05wCJd8wAycnnAEg9qACgnNcARivMAEUuzABEL88ARTHMALCv/QBGMcwAdnDBAEcvzwDl4/4AYFLLAOnr+wBSQLEA7un+AFZDsQA/LqkAwLv0AFdDugBCKLsA3t32AEYsvgBvZ8sAQDHNAEQuzQDQzeIAopXeAEUwygBBNM0ARjTEAEUzygBFMc0ASDDKAEgyxwBGMc0ASDPKAEg7xwBOLdMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACFcICFIHV9HVuggHB1UEiggIjQiiEMhEhLwILl6my3I7i8IdPJY/tJp5c5+DIJE7H7xGtXZImbGuTBVwr1rVBwiJW7AvbFGgI4hlGFxKkis3kLKjlE4wHH5iu2BhzE+OOMRYFoKBR75uPskzZDq/e7eMAMU1MsEBC8rHRYZnX6Q9qkG9f0lLAwItzZciq3XVQGMXGTGzwyh8Vg4KqTbVCCFDmKyo03dN2A0pQqeHCAh0lRsFLHhouVkCVAZ9bwgIVw9TXZutgJ0mems0hNAICCXSuBNphVCcEqEq12aeCAjWznEawDkeJwmlbcYUEbYIJNUI1VdqjwgIzwyT1FcIVwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=" rel="icon" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <div id="mobile-menu-open" class="shadow-large">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <!-- End #mobile-menu-toggle -->
+    <header>
+        <div id="mobile-menu-close">
+            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul id="menu" class="shadow">
+            
+            <li>
+                <a href="#experience">Experience</a>
+            </li>
+            <li>
+                <a href="#education">Education</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#skills">Skills</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+            
+        </ul>
+    </header>
+    <!-- End header -->
+
+    <div id="lead">
+        <div id="lead-content">
+          <h1>Ahmed Ayad</h1>
+          <h2><strong>Ambitious. Determined. Unfazed.</strong> </h2>
+            <a href="cv/Ahmed Ayad CV New.pdf" download target="_blank" class="btn-rounded-white">Download CV</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-overlay"></div>
+
+        <div id="lead-down">
+            <span>
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+            </span>
+        </div>
+        <!-- End #lead-down -->
+    </div>
+    <!-- End #lead -->
+       
+        <div id="about-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-2">
+                  <h2 class="heading">&gt;</h2>
+                </div>
+                <div class="col-md-8 col-lg-10">
+                  <h3>A natural leader with a confident disciplined approach; applying psychological principles in the business world</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End #about short -->
+
+
+    <div id="experience" class="background-alt">
+        <h2 class="heading">Experience</h2>
+        <div id="experience-timeline">
+            <div data-date="November 2021 – August 2022">
+                <h3>Kangaroo Learning LTD.</h3>
+                <h4>Operations Officer</h4>
+                <p>
+                    A very demanding role in an EdTech start-up. My role involved setting and managing OKRs, KPIs, as-well as writing content. This highlighted the difficulty and responsibility of a managerial role. Making sure my small team was unified, directed, and effective was a changing puzzle I enjoyed solving.
+                </p>
+            </div>
+
+            <div data-date="July 2021 – November 2021">
+                <h3>YourEdge Solutions</h3>
+                <h4>Sales Consultant</h4>
+                <p>
+                  Working in a retail environment as a sales consultant. I realised gradually that the sale depended entirely on what the customer needs. A purely logical approach didn’t serve me well, and slowly I adapted my style to listening to customers and working on how my products could help alleviate their pains. One downside was the isolated nature of the role, I would love a coaching and supporting environment to sharpen my skills.
+                </p>
+            </div>
+
+            <div data-date="May 2021 – July 2021">
+                <h3>V.A.S.E Academy</h3>
+                <h4>SEND Support</h4>
+                <p>
+                   I took the opportunity to work with behaviourally damaged children, using my psychological knowledge and talking skills to help them in their school activities. This was a heart-warming experience. It highlighted to me the difference between theory and practice, and that the conditions these children had didn’t define them.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- End #experience -->
+    
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>University of Lincoln</h3>
+            <span class="education-date">Sept 2017 - Sept 2018</span>
+            <h4>Bachelor of Science in Mathematics and Computer Science</h4>
+            <p>
+                Logical reasoning and a dimension where everything acted as expected had always provided me with a sense of safety and enjoyment. Maths was my calling. However, in my first year I felt like I was missing something, the element of randomness, the human touch.
+            </p>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Birmingham City University</h3>
+            <span class="education-date">Sept 2016 - Sept 2017</span>
+            <h4>Bachelor of Science in Psychology</h4>
+            <ul> <strong>Sales Psychology</strong>
+                <li>
+                    Provided an understanding of emotion & its influence on behaviour.
+                </li>
+                <li>
+                    In-depth understanding of confirmation and loss related biases.
+                </li>
+                <li>
+                    Psychological theory of individual and group identity in multiparty interactions.
+                </li>
+            </ul>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+    
+
+    <div id="projects" class="background-alt">
+        <h2 class="heading">Projects</h2>
+        <div class="container">
+            <div class="project-row">
+                <div class="project shadow-large">
+                    
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3><b>Robocode UK</b></h3>
+                        <p>
+                            A current business idea where I'm collaborating with my brothers. I produced the website, designed the logo, wrote the page content, the marketing emails and am responsible for producing leaflets, posters, banners, and managing social media.
+                        </p>
+                        <a href="https://robocode.uk/" target="_blank" class="project-buttons">View Site</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+
+                <div class="project shadow-large">
+                   
+                       
+                    
+                    <div class="project-info">
+                        <h3><b>KL EdTech</b></h3>
+                        <p>
+                            This involved extensive content & customer research. In 2 months I was able to produce a 17,000 word transcript for a course aimed at parents. As well as gathering data on every Grammar School in the UK and presenting in clean excel format. A sample of both is available below.
+                        </p>
+                        <a href="cv/samplefile.pdf" download target="_blank" class="project-buttons">Read Sample</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        </div>
+    </div>
+    <!-- End #projects -->
+    <!-- End #projects -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>Copywriting</li>
+            <li>Confidence Speaking</li>
+            <li>Data Gathering</li>
+            <li>Fluent English</li>
+            <li>Fluent Arabic</li>
+            <li>Email Tracking</li>
+            <li>Data Presentation</li>
+            <li>Time management and organisation</li>
+            <li>Java</li>
+            <li>Photoshop</li>
+            <li>Illustrator</li>
+            <li>Excel</li>
+            <li>Email Writing</li>
+            <li>Email Design</li>
+                        
+        </ul>
+    </div>
+    <!-- End #skills -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-2">
+                    <h2 class="heading">About Me</h2>
+                </div>
+               
+                <div class="col-md-8">
+                  <p>Discipline, self-belief, and determination work for me. Living near the Lake District means I can climb the mountains and swim in the lakes, the beauty and wonder never fades. I go back and forth from Birmingham every other week to visit my family and friends, the rough streets of Birmingham were my home for most of my life. I discovered a natural talent training Muay Thai. Competing for 5 years and winning the British Championship brought me to a crossroads, I decided it wasn't where I wanted my life to go. Now I'm ready for whatever life throws at me, conquering the fear of confrontation in the ring and the fear of death on some crazy mountain expeditions, I look forward to my future. 
+                  </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="image-block">
+      <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="meimg">
+                    	<img src="images/muaythai.JPG" alt="Muay Thai">
+                    </div>
+            	</div>
+            
+				<div class="column">
+                    <div class="meimg">
+                    	<img src="images/mountain.png" alt="Mountain">
+               		</div>
+                </div>
+                <div class="column">
+                    <div class="meimg">
+                    	<img src="images/family.jpeg" alt="Family">
+                </div>
+       </div>
+	</div>
+    </div>
+    </div>
+    <!-- End #about -->
+    
+    <div id="contact">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+            <form method="POST" action="mail.php">
+                <input type="hidden" name="subject" value="Contact request from personal website" />
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Send</button>
+		    </form>
+        </div>
+        <!-- End #contact-form -->
+    </div>
+    <!-- End #contact -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 copyright">
+                    <p>
+                        Copyright &copy; <span id="current-year">2022</span> Ahmed Ayad
+                    </p>
+                </div>
+                <div class="col-sm-2 top">
+                    <span id="to-top">
+                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                    </span>
+                </div>
+              
+            </div>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+    
+</body>
+
+</html>
